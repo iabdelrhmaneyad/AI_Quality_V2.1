@@ -1,0 +1,1498 @@
+[
+  {
+    "id": "S-CAM-001",
+    "category": "Setup",
+    "subcategory": "Camera Quality",
+    "rule": "Camera must remain on throughout the entire session. Turning off the camera is a flaggable offense ONLY if the tutor deliberately turns it off for an extended period (more than 1 minute) without a valid reason. If the camera is turned off BRIEFLY (under 1 minute) due to internet/connectivity issues — either tutor-side or student-side — this is NORMAL and should NOT be flagged.",
+    "keywords": [
+      "camera off",
+      "webcam",
+      "camera turned off",
+      "not in view",
+      "face not visible"
+    ],
+    "severity": "high",
+    "flag_level": "Red if repeated, Yellow if first-time (only if deliberate and >1 minute)",
+    "deduction": "-1 first occurrence, -2 if repeated",
+    "standard_comment": "S - Camera Quality: Kindly be informed that it is mandatory to keep the webcam activated for the entire session.",
+    "scoring_note": "Do NOT flag if camera was briefly turned off due to internet issues (tutor or student side). Brief camera-off (<1 min) to stabilize connection is NORMAL behavior. Only flag if the tutor deliberately keeps the camera off for extended periods without a valid reason."
+  },
+  {
+    "id": "S-CAM-002",
+    "category": "Setup",
+    "subcategory": "Camera Quality",
+    "rule": "Camera angle should be at eye level for clear engagement. Low or side angles reduce connection. CRITICAL: Only flag the TUTOR's camera angle. If the tutor is INSTRUCTING the student to adjust their camera (e.g. Arabic: 'ممكن نزل الكاميرا شوية' = 'Can you lower the camera a bit'), this is POSITIVE tutor behavior (coaching the student), NOT a tutor setup issue.",
+    "keywords": [
+      "camera angle",
+      "eye level",
+      "low angle",
+      "side angle",
+      "camera position"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "S - Camera Quality: The camera angle was not properly set. Kindly adjust the camera to eye level for clearer communication.",
+    "scoring_note": "CRITICAL: Before flagging camera angle, determine WHO the comment is about. If the tutor says 'ممكن نزل/ارفع الكاميرا' (can you lower/raise the camera), they are instructing the STUDENT — this is POSITIVE behavior, not a flag. Only flag if the TUTOR's OWN camera is at a bad angle."
+  },
+  {
+    "id": "S-CAM-003",
+    "category": "Setup",
+    "subcategory": "Camera Quality",
+    "rule": "Camera image quality should be clear enough for expressions and gestures to be visible.",
+    "keywords": [
+      "blurry",
+      "image quality",
+      "low resolution",
+      "unclear video"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "S - Camera Quality: The camera image quality appeared noticeably low, making it difficult for the student to clearly see expressions and gestures."
+  },
+  {
+    "id": "S-MIC-001",
+    "category": "Setup",
+    "subcategory": "Microphone Quality",
+    "rule": "Microphone should be clear and audible. Low volume, static, or harsh audio affects learning.",
+    "keywords": [
+      "microphone",
+      "audio",
+      "volume low",
+      "static",
+      "harsh sound",
+      "unclear voice",
+      "hard to hear"
+    ],
+    "severity": "medium",
+    "flag_level": "Yellow if severe",
+    "deduction": "-1",
+    "standard_comment": "S - Microphone Quality: The volume was occasionally unclear, which may have made it hard for the student to hear."
+  },
+  {
+    "id": "S-MIC-002",
+    "category": "Setup",
+    "subcategory": "Microphone Quality",
+    "rule": "Microphone should be muted before student joins the session.",
+    "keywords": [
+      "mute",
+      "microphone unmuted",
+      "mic unmuted before"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "S - Microphone Quality: Kindly ensure that your microphone is muted until the student joins the session."
+  },
+  {
+    "id": "S-ENV-001",
+    "category": "Setup",
+    "subcategory": "Environment",
+    "rule": "Must use the official iSchool Zoom virtual background with the correct logo. Mirrored logos should be fixed in Zoom settings.",
+    "keywords": [
+      "background",
+      "iSchool logo",
+      "virtual background",
+      "mirrored",
+      "backdrop"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "S - Environment: Your professionalism in using the iSchool logo as your backdrop is greatly appreciated. Just ensure it is not mirrored by adjusting your Zoom settings."
+  },
+  {
+    "id": "S-ENV-002",
+    "category": "Setup",
+    "subcategory": "Environment",
+    "rule": "Sessions must not be conducted in public places. A quiet, private space is required.",
+    "keywords": [
+      "public place",
+      "background noise",
+      "noisy environment",
+      "disturbances"
+    ],
+    "severity": "high",
+    "flag_level": "Red if severe",
+    "deduction": "-2",
+    "standard_comment": "S - Environment: Background noise or disturbances were present. Please ensure a quiet environment suitable for learning."
+  },
+  {
+    "id": "S-ENV-003",
+    "category": "Setup",
+    "subcategory": "Environment",
+    "rule": "Lighting should be adequate - not too dim, not too bright. Face must be clearly visible.",
+    "keywords": [
+      "lighting",
+      "dim",
+      "dark",
+      "too bright",
+      "shadows",
+      "well-lit"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "S - Environment: The lighting during the session could be improved. A well-lit environment with balanced lighting improves visual clarity and engagement."
+  },
+  {
+    "id": "S-ENV-004",
+    "category": "Setup",
+    "subcategory": "Environment",
+    "rule": "No distracting objects (cups, phones, etc.) in front of the camera. No eating or chewing gum.",
+    "keywords": [
+      "cups",
+      "distracting objects",
+      "phone visible",
+      "eating",
+      "chewing gum"
+    ],
+    "severity": "low",
+    "flag_level": "Yellow if eating/chewing",
+    "deduction": "-1",
+    "standard_comment": "S - Environment: Kindly avoid placing distracting objects in front of the camera during the session."
+  },
+  {
+    "id": "S-INT-001",
+    "category": "Setup",
+    "subcategory": "Internet Quality",
+    "rule": "Internet connection should be stable. ONLY flag tutor-side internet issues that cause disconnection for MORE THAN 1 MINUTE. Brief lags, momentary freezes, or short disconnections (under 1 minute) are NORMAL in online sessions and should NOT be flagged. CRITICAL: Distinguish TUTOR internet issues from STUDENT internet issues — if the STUDENT has internet problems (student's camera freezes, student disconnects, student asks to turn off camera due to their internet), do NOT penalize the tutor.",
+    "keywords": [
+      "internet lag",
+      "disconnection",
+      "connection lost",
+      "buffering",
+      "frozen"
+    ],
+    "severity": "medium",
+    "flag_level": "Yellow ONLY if tutor-side disconnection >1 minute, repeated 3+ times",
+    "deduction": "-1",
+    "standard_comment": "S - Internet Quality: Occasional internet lags disrupted the session flow and made it harder for the student to stay engaged.",
+    "scoring_note": "CRITICAL: Only flag TUTOR-SIDE internet issues lasting MORE THAN 1 MINUTE. Student-side internet issues (student disconnects, student camera freezes, student asks to close camera) are NOT the tutor's fault and must NOT be flagged against the tutor. Brief lags (<1 min) are normal in online sessions. Arabic clues: if someone says 'النت عندك بيقطع' (your internet is cutting) TO the student, that means STUDENT has the problem, not the tutor."
+  },
+  {
+    "id": "S-DRS-001",
+    "category": "Setup",
+    "subcategory": "Dress Code",
+    "rule": "Semi-formal or formal attire required. Sportswear, pajamas, or inappropriate clothing is flaggable.",
+    "keywords": [
+      "dress code",
+      "sportswear",
+      "pajamas",
+      "casual attire",
+      "hoodie",
+      "inappropriate clothing"
+    ],
+    "severity": "medium",
+    "flag_level": "Yellow first time, Red if repeated",
+    "deduction": "-1 first, -2 repeated",
+    "standard_comment": "S - Dress Code: Your attention is kindly requested to strictly adhere to the formal or semi-formal dress attire policy.",
+    "scoring_note": "Only flag if clearly inappropriate (sportswear, pajamas). Normal casual wear is acceptable. Do NOT flag if unclear from video."
+  },
+  {
+    "id": "S-POS-001",
+    "category": "Setup",
+    "subcategory": "Environment",
+    "rule": "Tutor should maintain a professional, upright posture. Relaxed leaning or resting head on hand is distracting.",
+    "keywords": [
+      "posture",
+      "relaxed",
+      "leaning",
+      "hand on cheek",
+      "slouching",
+      "movement"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "S - Environment: Maintaining a more formal and upright posture helps support a focused and professional learning environment."
+  },
+  {
+    "id": "S-EYE-001",
+    "category": "Setup",
+    "subcategory": "Environment",
+    "rule": "Tutor should maintain eye contact with camera. Looking between two screens or downward limits engagement.",
+    "keywords": [
+      "eye contact",
+      "two screens",
+      "looking away",
+      "gaze",
+      "not facing camera"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "S - Environment: For better engagement, keep the primary focus toward the front-facing screen or camera."
+  },
+  {
+    "id": "A-INI-001",
+    "category": "Attitude",
+    "subcategory": "Session Initiation & Closure",
+    "rule": "Session should begin with light, friendly questions to build rapport. Ice-breakers recommended for first sessions.",
+    "keywords": [
+      "friendly opening",
+      "ice-breaker",
+      "warm start",
+      "how was your week",
+      "introduction"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "A - Session Initiation & Closure: Beginning the session with light, friendly questions can support a more engaging and student-centered atmosphere."
+  },
+  {
+    "id": "A-INI-002",
+    "category": "Attitude",
+    "subcategory": "Session Initiation & Closure",
+    "rule": "Session should end with a warm goodbye and thank-you. Abrupt endings feel disrespectful.",
+    "keywords": [
+      "goodbye",
+      "closing",
+      "abrupt ending",
+      "wrap up",
+      "thank you",
+      "session end"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "A - Session Initiation & Closure: Ending the session with a warm goodbye helps leave a positive impression."
+  },
+  {
+    "id": "A-FRD-001",
+    "category": "Attitude",
+    "subcategory": "Friendliness",
+    "rule": "Tutor should smile and engage warmly. Monotone or harsh delivery affects learning.",
+    "keywords": [
+      "smiling",
+      "friendly",
+      "warm",
+      "rapport",
+      "engaging",
+      "monotonous"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "A - Friendliness: Consider smiling and engaging in friendly conversation to build rapport and enhance message delivery."
+  },
+  {
+    "id": "A-FRD-002",
+    "category": "Attitude",
+    "subcategory": "Friendliness",
+    "rule": "Shouting or intimidating behavior is flaggable. Harsh tone with struggling students is unacceptable.",
+    "keywords": [
+      "shouting",
+      "harsh tone",
+      "intimidating",
+      "nervous",
+      "impatient",
+      "aggressive"
+    ],
+    "severity": "high",
+    "flag_level": "Red if severe, Yellow if mild",
+    "deduction": "-2",
+    "standard_comment": "A - Friendliness: Please maintain a calm and supportive tone to foster a positive learning environment."
+  },
+  {
+    "id": "A-LNG-001",
+    "category": "Attitude",
+    "subcategory": "Language Used",
+    "rule": "Professional, age-appropriate language required. Informal/casual expressions affect professional tone.",
+    "keywords": [
+      "informal language",
+      "casual expression",
+      "unprofessional language",
+      "inappropriate words"
+    ],
+    "severity": "medium",
+    "flag_level": "Yellow if significant",
+    "deduction": "-1",
+    "standard_comment": "A - Language Used: Maintaining more formal language helps create a focused and respectful learning environment."
+  },
+  {
+    "id": "A-LNG-002",
+    "category": "Attitude",
+    "subcategory": "Language Used",
+    "rule": "Political or religious topics must be avoided. Sessions should remain neutral and inclusive.",
+    "keywords": [
+      "political",
+      "religious",
+      "controversial",
+      "sensitive topic"
+    ],
+    "severity": "high",
+    "flag_level": "Red Flag",
+    "deduction": "-3",
+    "standard_comment": "A - Language Used: Political or religious topics should be avoided to maintain a neutral and inclusive learning environment."
+  },
+  {
+    "id": "A-VOC-001",
+    "category": "Attitude",
+    "subcategory": "Voice Tone & Clarity",
+    "rule": "Tone should be active and lively, not monotonous. Signs of drowsiness or fatigue are unacceptable.",
+    "keywords": [
+      "monotonous",
+      "drowsy",
+      "fatigue",
+      "tired",
+      "bored",
+      "unenthusiastic"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment or Yellow",
+    "deduction": "-1",
+    "standard_comment": "A - Voice Tone & Clarity: It is vital not to convey signs of drowsiness or fatigue, as it could distract the student."
+  },
+  {
+    "id": "A-PRN-001",
+    "category": "Attitude",
+    "subcategory": "Language Used",
+    "rule": "Technical terms should be pronounced correctly. Mispronunciation affects credibility.",
+    "keywords": [
+      "pronunciation",
+      "mispronounce",
+      "incorrect word"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "A - Language Used: Before the session, please ensure that any technical words you plan to use are pronounced correctly."
+  },
+  {
+    "id": "A-STU-001",
+    "category": "Attitude",
+    "subcategory": "Friendliness",
+    "rule": "Avoid blaming students for incomplete homework. Use supportive, encouraging language.",
+    "keywords": [
+      "blaming student",
+      "harsh homework",
+      "distrust",
+      "punishing"
+    ],
+    "severity": "medium",
+    "flag_level": "Yellow if harsh",
+    "deduction": "-1",
+    "standard_comment": "A - Friendliness: While addressing incomplete homework, kindly avoid blaming or speaking harshly. Guide with encouragement."
+  },
+  {
+    "id": "A-ISC-001",
+    "category": "Attitude",
+    "subcategory": "Session Initiation & Closure",
+    "rule": "Mentioning iSchool brand name at the start and key moments builds brand loyalty.",
+    "keywords": [
+      "iSchool",
+      "brand",
+      "welcome to iSchool"
+    ],
+    "severity": "low",
+    "flag_level": "Advice only",
+    "deduction": "0",
+    "standard_comment": "[Advice] - Mentioning iSchool at the outset and conclusion cultivates brand loyalty."
+  },
+  {
+    "id": "A-ENG-001",
+    "category": "Attitude",
+    "subcategory": "Language Used",
+    "rule": "Sessions should be conducted in English. Casual phrases or connectors in Arabic should be minimized.",
+    "keywords": [
+      "arabic",
+      "not english",
+      "language mix",
+      "code switching"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "A - Language Used: Kindly ensure full consistency in using English throughout the session."
+  },
+  {
+    "id": "P-SLD-001",
+    "category": "Preparation",
+    "subcategory": "Project software & slides",
+    "rule": "Presentation must be displayed in full-screen/slide show mode. No browser tab distractions.",
+    "keywords": [
+      "full screen",
+      "slide show mode",
+      "browser tabs",
+      "presentation mode",
+      "not fullscreen"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "P - Project software & slides: When sharing the presentation, kindly ensure it is displayed in full-screen mode to avoid distractions."
+  },
+  {
+    "id": "P-SLD-002",
+    "category": "Preparation",
+    "subcategory": "Project software & slides",
+    "rule": "All tools and software should be opened and ready before the session starts.",
+    "keywords": [
+      "not prepared",
+      "opening software",
+      "delay",
+      "tool not ready",
+      "charger",
+      "setup delay"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "P - Project software & slides: Preparing all tools beforehand can save time and help students stay focused."
+  },
+  {
+    "id": "P-SLD-003",
+    "category": "Preparation",
+    "subcategory": "Project software & slides",
+    "rule": "Use desktop versions of tools (Godot, PictoBlox, ScratchJr) for stability.",
+    "keywords": [
+      "desktop version",
+      "web version",
+      "browser version",
+      "stability"
+    ],
+    "severity": "low",
+    "flag_level": "Advice",
+    "deduction": "-1",
+    "standard_comment": "P - Project software & slides: Kindly adhere to using the desktop version for better performance and stability."
+  },
+  {
+    "id": "P-STU-001",
+    "category": "Preparation",
+    "subcategory": "Session study",
+    "rule": "Tutor should review lesson content thoroughly. Hesitation or lack of confidence indicates poor preparation.",
+    "keywords": [
+      "hesitation",
+      "confidence",
+      "unprepared",
+      "lack of preparation",
+      "stumbling",
+      "unsure"
+    ],
+    "severity": "medium",
+    "flag_level": "Yellow if severe",
+    "deduction": "-1",
+    "standard_comment": "P - Session study: While generally prepared, the explanation lacked confidence at times. A quick review could help improve delivery."
+  },
+  {
+    "id": "P-KNW-001",
+    "category": "Preparation",
+    "subcategory": "Knowledge About Subject",
+    "rule": "Incorrect information in response to student questions is a flaggable offense.",
+    "keywords": [
+      "wrong answer",
+      "incorrect information",
+      "wrong explanation",
+      "factual error"
+    ],
+    "severity": "high",
+    "flag_level": "Yellow or Red",
+    "deduction": "-2",
+    "standard_comment": "P - Knowledge About Subject: Incorrect information was provided. Please review lesson content thoroughly before sessions."
+  },
+  {
+    "id": "P-BUG-001",
+    "category": "Preparation",
+    "subcategory": "Session study",
+    "rule": "Project code should be tested and robust before the session. Bugs during implementation indicate poor preparation.",
+    "keywords": [
+      "bugs",
+      "code error",
+      "not working",
+      "project broken",
+      "debugging"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "P - Session study: Given challenges with bugs during implementation, more thorough preparation would ensure smoother sessions."
+  },
+  {
+    "id": "P-INT-001",
+    "category": "Preparation",
+    "subcategory": "Project software & slides",
+    "rule": "Internal platforms (LMS, Dashboard, Slack) should not be displayed to students.",
+    "keywords": [
+      "internal platform",
+      "dashboard visible",
+      "slack",
+      "LMS shown"
+    ],
+    "severity": "medium",
+    "flag_level": "Yellow Flag",
+    "deduction": "-1",
+    "standard_comment": "P - Project software & slides: Internal platforms were displayed. Please avoid showing internal tools during sessions."
+  },
+  {
+    "id": "P-PRI-001",
+    "category": "Preparation",
+    "subcategory": "Project software & slides",
+    "rule": "Personal contact information (email, WhatsApp, phone number) must not be visible during session.",
+    "keywords": [
+      "email visible",
+      "WhatsApp",
+      "personal information",
+      "phone number",
+      "contact info"
+    ],
+    "severity": "medium",
+    "flag_level": "Yellow Flag",
+    "deduction": "-1",
+    "standard_comment": "P - Project software & slides: Kindly ensure that personal contact information is not visible to maintain data confidentiality."
+  },
+  {
+    "id": "P-QA-001",
+    "category": "Preparation",
+    "subcategory": "Session study",
+    "rule": "Q&A answers should be reviewed beforehand. Incorrect answers during Q&A are flagged.",
+    "keywords": [
+      "Q&A incorrect",
+      "wrong answer Q&A",
+      "quiz answer wrong"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment or Yellow",
+    "deduction": "-1",
+    "standard_comment": "P - Session study: Please ensure Q&A slides are reviewed before starting to ensure accuracy."
+  },
+  {
+    "id": "C-SPC-001",
+    "category": "Curriculum",
+    "subcategory": "Slides and project completion",
+    "rule": "All slides must be covered. Skipping slides (especially Q&A and presentation slides) is a deduction.",
+    "keywords": [
+      "skipped slides",
+      "slides omitted",
+      "not covered",
+      "missed slides",
+      "Q&A skipped"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment or Yellow",
+    "deduction": "-1",
+    "standard_comment": "C - Slides and project completion: Ensure effective time management to avoid omission of slides."
+  },
+  {
+    "id": "C-SPC-002",
+    "category": "Curriculum",
+    "subcategory": "Slides and project completion",
+    "rule": "Project must be completed during the session. Incomplete projects due to poor time management are noted.",
+    "keywords": [
+      "project incomplete",
+      "not finished",
+      "time management",
+      "project not completed"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "C - Slides and project completion: The project was not fully completed. Better time allocation could help ensure full hands-on practice."
+  },
+  {
+    "id": "C-SPC-003",
+    "category": "Curriculum",
+    "subcategory": "Slides and project completion",
+    "rule": "Students must NOT take screenshots of slides. All material is on the student dashboard.",
+    "keywords": [
+      "screenshot",
+      "taking photo",
+      "photographing slides"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "C - Slides and project completion: It is not allowed for students to take screenshots of the slides."
+  },
+  {
+    "id": "C-TUM-001",
+    "category": "Curriculum",
+    "subcategory": "Tools used and Methodology",
+    "rule": "Zoom annotation tools should be used instead of mouse pointer for explaining concepts.",
+    "keywords": [
+      "annotation tools",
+      "mouse pointer",
+      "highlighting",
+      "arrow tool",
+      "zoom tools"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "C - Tools used and Methodology: Using Zoom annotation tools instead of the mouse pointer would provide clearer guidance."
+  },
+  {
+    "id": "C-TUM-002",
+    "category": "Curriculum",
+    "subcategory": "Tools used and Methodology",
+    "rule": "Only pre-approved materials and tools should be used. Unapproved external resources are flaggable.",
+    "keywords": [
+      "unapproved",
+      "external resource",
+      "unauthorized",
+      "not approved tool"
+    ],
+    "severity": "medium",
+    "flag_level": "Yellow Flag",
+    "deduction": "-1",
+    "standard_comment": "C - Tools used and Methodology: Please only use pre-approved materials to stay aligned with the curriculum."
+  },
+  {
+    "id": "C-TUM-003",
+    "category": "Curriculum",
+    "subcategory": "Tools used and Methodology",
+    "rule": "Videos must be shared with audio enabled.",
+    "keywords": [
+      "video no audio",
+      "audio not shared",
+      "muted video"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "C - Tools used and Methodology: Kindly ensure audio is shared when playing videos."
+  },
+  {
+    "id": "C-HW-001",
+    "category": "Curriculum",
+    "subcategory": "Homework",
+    "rule": "Homework must be properly reviewed, not just asked about. Walk through incomplete homework with student.",
+    "keywords": [
+      "homework review",
+      "homework check",
+      "homework not checked",
+      "homework incomplete"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "C - Homework: It is not enough to just check if homework was done. Please walk through a quick overview."
+  },
+  {
+    "id": "C-HW-002",
+    "category": "Curriculum",
+    "subcategory": "Homework",
+    "rule": "Students must receive clear homework instructions before session ends.",
+    "keywords": [
+      "homework not assigned",
+      "no homework instructions",
+      "forgot homework"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "C - Homework: Kindly ensure students receive clear instructions about upcoming homework before the session ends."
+  },
+  {
+    "id": "C-TG-001",
+    "category": "Curriculum",
+    "subcategory": "Slides and project completion",
+    "rule": "Teacher Guide (TG) must be strictly followed. Deviating from the TG is noted.",
+    "keywords": [
+      "teacher guide",
+      "TG not followed",
+      "deviated from plan",
+      "content changed"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment or Yellow",
+    "deduction": "-1",
+    "standard_comment": "C - Slides and project completion: The project was not fully completed as the teacher guide was not followed."
+  },
+  {
+    "id": "C-PRE-001",
+    "category": "Curriculum",
+    "subcategory": "Slides and project completion",
+    "rule": "Student must lead the presentation segment. Tutor should not take over.",
+    "keywords": [
+      "student presentation",
+      "tutor took over presentation",
+      "presentation segment"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "C - Slides and project completion: The student is expected to lead the presentation segment."
+  },
+  {
+    "id": "C-VID-001",
+    "category": "Curriculum",
+    "subcategory": "Tools used and Methodology",
+    "rule": "Videos should be paused at key points to discuss content with the student.",
+    "keywords": [
+      "pause video",
+      "video discussion",
+      "video without discussion",
+      "played continuously"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "C - Tools used and Methodology: It would be beneficial to pause the video to discuss key points."
+  },
+  {
+    "id": "C-DPT-001",
+    "category": "Curriculum",
+    "subcategory": "Tools used and Methodology",
+    "rule": "Avoid going too deep into topics not age-appropriate or that interrupt session flow.",
+    "keywords": [
+      "too deep",
+      "not age appropriate",
+      "over-explaining",
+      "complex for age"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "C - Tools used and Methodology: Please avoid going too deep into a topic not suitable for the student age."
+  },
+  {
+    "id": "C-ZMC-001",
+    "category": "Curriculum",
+    "subcategory": "Tools used and Methodology",
+    "rule": "Zoom meeting controls must not overlap with the presentation.",
+    "keywords": [
+      "zoom controls",
+      "controls overlap",
+      "meeting controls visible"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "C - Tools used and Methodology: Kindly ensure that the Zoom meeting controls do not overlap with the presentation."
+  },
+  {
+    "id": "T-ENG-001",
+    "category": "Teaching",
+    "subcategory": "Student Engagement",
+    "rule": "Avoid long stretches of one-directional explaining. Ask open-ended questions and involve the student.",
+    "keywords": [
+      "one-directional",
+      "long explanation",
+      "no interaction",
+      "monologue",
+      "not engaging"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "T - Student Engagement: Kindly avoid spending long stretches explaining without involving the student."
+  },
+  {
+    "id": "T-ENG-002",
+    "category": "Teaching",
+    "subcategory": "Student Engagement",
+    "rule": "During checkup, engage the student with participation rather than re-explaining concepts.",
+    "keywords": [
+      "checkup",
+      "recap",
+      "re-explaining",
+      "revision without engagement"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "T - Student Engagement: Kindly engage the student during the checkup by encouraging participation."
+  },
+  {
+    "id": "T-ENG-003",
+    "category": "Teaching",
+    "subcategory": "Student Engagement",
+    "rule": "Tutor should not remain silent during student implementation. Active engagement is required.",
+    "keywords": [
+      "silent during implementation",
+      "no guidance",
+      "quiet while working"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "T - Student Engagement: Kindly enhance class interactivity during project implementation."
+  },
+  {
+    "id": "T-PI-001",
+    "category": "Teaching",
+    "subcategory": "Project Implementation & Activities",
+    "rule": "Student must independently implement the project. Step-by-step hand-holding should be limited.",
+    "keywords": [
+      "step by step",
+      "hand-holding",
+      "excessive guidance",
+      "spoon-feeding",
+      "too much help"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "T - Project Implementation & Activities: Encourage the student to rely more on their own reasoning."
+  },
+  {
+    "id": "T-PI-002",
+    "category": "Teaching",
+    "subcategory": "Project Implementation & Activities",
+    "rule": "AVOID endorsing direct code copying. Students should implement independently.",
+    "keywords": [
+      "code copying",
+      "copy paste",
+      "sent code",
+      "copying directly"
+    ],
+    "severity": "high",
+    "flag_level": "Yellow or Red",
+    "deduction": "-2",
+    "standard_comment": "T - Project Implementation & Activities: Kindly avoid endorsing direct code copying. Encourage independent learning."
+  },
+  {
+    "id": "T-PI-003",
+    "category": "Teaching",
+    "subcategory": "Project Implementation & Activities",
+    "rule": "Divide project into smaller sections. Demonstrate first, then let student try.",
+    "keywords": [
+      "divide project",
+      "smaller sections",
+      "demonstrate first",
+      "step by step project"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "T - Project Implementation & Activities: It may be helpful to divide the project into smaller sections followed by student implementation."
+  },
+  {
+    "id": "T-PI-004",
+    "category": "Teaching",
+    "subcategory": "Project Implementation & Activities",
+    "rule": "Student must share screen during project implementation.",
+    "keywords": [
+      "screen sharing",
+      "not sharing screen",
+      "no screen share",
+      "student screen"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "T - Project Implementation & Activities: The student should share their screen during project implementation."
+  },
+  {
+    "id": "T-PI-005",
+    "category": "Teaching",
+    "subcategory": "Project Implementation & Activities",
+    "rule": "Students must upload completed projects to the dashboard. Tutor must assist.",
+    "keywords": [
+      "upload project",
+      "dashboard upload",
+      "project submission",
+      "submit project"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "T - Project Implementation & Activities: Students must upload their completed projects to the dashboard."
+  },
+  {
+    "id": "T-PI-006",
+    "category": "Teaching",
+    "subcategory": "Project Implementation & Activities",
+    "rule": "Project description must be detailed and include code images.",
+    "keywords": [
+      "project description",
+      "code image missing",
+      "incomplete submission"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "T - Project Implementation & Activities: Please ensure project descriptions are detailed and all criteria included."
+  },
+  {
+    "id": "T-PI-007",
+    "category": "Teaching",
+    "subcategory": "Project Implementation & Activities",
+    "rule": "Tutor must NOT take control of student screen via remote control to complete their project.",
+    "keywords": [
+      "remote control",
+      "took control",
+      "controlling student screen"
+    ],
+    "severity": "high",
+    "flag_level": "Yellow or Red",
+    "deduction": "-2",
+    "standard_comment": "T - Project Implementation & Activities: Guide the student instead of directly completing tasks for them."
+  },
+  {
+    "id": "T-CM-001",
+    "category": "Teaching",
+    "subcategory": "Class Management",
+    "rule": "Session duration must be strictly 1 hour (+-10 minutes).",
+    "keywords": [
+      "session duration",
+      "too long",
+      "too short",
+      "exceeded time",
+      "early ending"
+    ],
+    "severity": "medium",
+    "flag_level": "Yellow or Red",
+    "deduction": "-1",
+    "standard_comment": "T - Class Management: The session duration should be strictly adhered to (1 hour +-10 minutes)."
+  },
+  {
+    "id": "T-CM-002",
+    "category": "Teaching",
+    "subcategory": "Class Management",
+    "rule": "Tutor must join 10 minutes before session start time.",
+    "keywords": [
+      "late arrival",
+      "joined late",
+      "presence",
+      "minutes earlier"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment or Yellow",
+    "deduction": "-1",
+    "standard_comment": "T - Class Management: Kindly ensure your presence 10 minutes ahead of the session."
+  },
+  {
+    "id": "T-CM-003",
+    "category": "Teaching",
+    "subcategory": "Class Management",
+    "rule": "No personal phone calls or texts during session.",
+    "keywords": [
+      "phone call",
+      "texting",
+      "phone distraction",
+      "personal phone"
+    ],
+    "severity": "medium",
+    "flag_level": "Yellow Flag",
+    "deduction": "-1",
+    "standard_comment": "T - Class Management: Please avoid using your phone for personal matters while teaching."
+  },
+  {
+    "id": "T-CM-004",
+    "category": "Teaching",
+    "subcategory": "Class Management",
+    "rule": "Breaks should not exceed 5 minutes.",
+    "keywords": [
+      "break",
+      "long break",
+      "break duration"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "T - Class Management: Breaks should not exceed 5 minutes."
+  },
+  {
+    "id": "T-SS-001",
+    "category": "Teaching",
+    "subcategory": "Session Synchronization",
+    "rule": "All session components (Q&A, recap, attendance, presentation) must be covered in order.",
+    "keywords": [
+      "session components",
+      "Q&A skipped",
+      "attendance skipped",
+      "recap skipped"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment or Yellow",
+    "deduction": "-1",
+    "standard_comment": "T - Session Synchronization: Key components were skipped. Ensure all essential elements are included."
+  },
+  {
+    "id": "T-SS-002",
+    "category": "Teaching",
+    "subcategory": "Session Synchronization",
+    "rule": "Follow the planned session sequence. Timeline deviations should be minimized.",
+    "keywords": [
+      "timeline deviation",
+      "sequence",
+      "order",
+      "timing"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "T - Session Synchronization: Occasional timeline deviations were observed."
+  },
+  {
+    "id": "T-IF-001",
+    "category": "Teaching",
+    "subcategory": "Class Management",
+    "rule": "Internal Feedback must include details about any issues during the session.",
+    "keywords": [
+      "internal feedback",
+      "feedback details",
+      "session issues"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "T - Class Management: Kindly provide more details in the Internal Feedback regarding any issue."
+  },
+  {
+    "id": "T-PAR-001",
+    "category": "Teaching",
+    "subcategory": "Class Management",
+    "rule": "No direct discussions with parents. Refer to the designated agent.",
+    "keywords": [
+      "parent discussion",
+      "parent communication",
+      "talking to parent"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "T - Class Management: Please refrain from direct discussions with parents."
+  },
+  {
+    "id": "T-CON-001",
+    "category": "Teaching",
+    "subcategory": "Class Management",
+    "rule": "Session content must not be changed or a different lesson taught.",
+    "keywords": [
+      "changed content",
+      "different lesson",
+      "wrong session"
+    ],
+    "severity": "high",
+    "flag_level": "Red Flag",
+    "deduction": "-3",
+    "standard_comment": "T - Class Management: Changing the content or teaching a different lesson is strictly not allowed."
+  },
+  {
+    "id": "T-NEG-001",
+    "category": "Teaching",
+    "subcategory": "Class Management",
+    "rule": "Tutor must not criticize or make negative remarks about session content to students.",
+    "keywords": [
+      "criticize content",
+      "negative remarks",
+      "complain about material"
+    ],
+    "severity": "medium",
+    "flag_level": "Yellow Flag",
+    "deduction": "-1",
+    "standard_comment": "T - Class Management: Kindly refrain from making negative remarks about session content."
+  },
+  {
+    "id": "T-PRE-001",
+    "category": "Teaching",
+    "subcategory": "Student Engagement",
+    "rule": "During presentation segment, allow students to present what they have learned.",
+    "keywords": [
+      "presentation segment",
+      "student presenting",
+      "student speaking"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "T - Student Engagement: During the presentation segment, allow students to share what they have learned."
+  },
+  {
+    "id": "T-VID-001",
+    "category": "Teaching",
+    "subcategory": "Student Engagement",
+    "rule": "Pause videos to discuss content with the student rather than playing continuously.",
+    "keywords": [
+      "pause video",
+      "discuss video",
+      "video break"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "T - Student Engagement: It would be beneficial to pause the video to discuss it with the student."
+  },
+  {
+    "id": "T-STU-001",
+    "category": "Teaching",
+    "subcategory": "Class Management",
+    "rule": "Ensure students maintain professional conduct (no inappropriate language, proper seating).",
+    "keywords": [
+      "student conduct",
+      "inappropriate language",
+      "student behavior",
+      "relaxing on bed"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "T - Class Management: Ensure students maintain professional conduct during the session."
+  },
+  {
+    "id": "F-VAR-001",
+    "category": "Feedback",
+    "subcategory": "Feedback Quality",
+    "rule": "Feedback must vary between sessions for the same student.",
+    "keywords": [
+      "same feedback",
+      "repeated feedback",
+      "identical comment"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "F - Feedback Quality: Kindly vary the feedback provided across sessions."
+  },
+  {
+    "id": "F-ALN-001",
+    "category": "Feedback",
+    "subcategory": "Feedback Quality",
+    "rule": "Feedback must align with what actually happened in the session. No generic or unrelated comments.",
+    "keywords": [
+      "inaccurate feedback",
+      "generic comment",
+      "unrelated feedback",
+      "not aligned"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "F - Feedback Quality: The feedback could be more aligned with what occurred during the session."
+  },
+  {
+    "id": "F-EMP-001",
+    "category": "Feedback",
+    "subcategory": "Feedback Quality",
+    "rule": "Feedback section must not be left empty.",
+    "keywords": [
+      "empty feedback",
+      "no feedback",
+      "blank feedback"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "F - Feedback Quality: Kindly avoid leaving the feedback section empty."
+  },
+  {
+    "id": "F-RAT-001",
+    "category": "Feedback",
+    "subcategory": "Feedback Quality",
+    "rule": "Written feedback must align with the star rating.",
+    "keywords": [
+      "rating mismatch",
+      "star rating",
+      "rating inconsistent"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "F - Feedback Quality: Please ensure that the written comment aligns with the given star rating."
+  },
+  {
+    "id": "F-UNQ-001",
+    "category": "Feedback",
+    "subcategory": "Feedback Quality",
+    "rule": "Avoid using the same feedback across multiple students.",
+    "keywords": [
+      "same across students",
+      "generic for all",
+      "not personalized"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "F - Feedback Quality: Please avoid using the same feedback across multiple students."
+  },
+  {
+    "id": "F-BAL-001",
+    "category": "Feedback",
+    "subcategory": "Feedback Quality",
+    "rule": "Feedback should include both positive reinforcement AND suggestions for improvement.",
+    "keywords": [
+      "only negative",
+      "no positive",
+      "only criticism",
+      "harsh feedback"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "F - Feedback Quality: Kindly ensure that feedback includes both positive reinforcement and suggestions for improvement."
+  },
+  {
+    "id": "F-DLY-001",
+    "category": "Feedback",
+    "subcategory": "Feedback Quality",
+    "rule": "Feedback should be submitted promptly after the session.",
+    "keywords": [
+      "delayed feedback",
+      "late submission"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "F - Feedback Quality: Please share feedback promptly after each session."
+  },
+  {
+    "id": "F-LNG-001",
+    "category": "Feedback",
+    "subcategory": "Feedback Quality",
+    "rule": "All student feedback must be written in English.",
+    "keywords": [
+      "arabic feedback",
+      "not english",
+      "wrong language"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "F - Feedback Quality: Kindly ensure that all student feedback is written in English."
+  },
+  {
+    "id": "F-RSN-001",
+    "category": "Feedback",
+    "subcategory": "Feedback Quality",
+    "rule": "Any rating below 5 stars must include a reason.",
+    "keywords": [
+      "low rating",
+      "below 5",
+      "no reason for rating"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "F - Feedback Quality: Kindly include reasons for any ratings below 5."
+  },
+  {
+    "id": "META-SCORING-001",
+    "category": "Scoring",
+    "subcategory": "Calibration",
+    "rule": "SCORING CALIBRATION: Use these anchors when determining scores.",
+    "scoring_guide": {
+      "95-100": "Outstanding - zero or one minor cosmetic issue (e.g., logo mirrored). This is the EXPECTED range for most sessions.",
+      "88-94": "Good - two to three low-severity issues with supporting evidence.",
+      "80-87": "Acceptable - moderate issues found (e.g., camera off segment, one Q&A answer incorrect).",
+      "70-79": "Needs Improvement - multiple moderate or one high-severity issue found.",
+      "Below 70": "Serious Concerns - multiple high-severity issues (harsh tone + skipped content + no student implementation)."
+    },
+    "deduction_system": {
+      "first_time_comment": -1,
+      "yellow_flag": -1,
+      "red_flag_repeated": -2,
+      "repeated_red_flag": -3
+    },
+    "keywords": [],
+    "severity": "info"
+  },
+  {
+    "id": "A-EYE-001",
+    "category": "Attitude",
+    "subcategory": "Friendliness",
+    "rule": "The tutor should maintain eye contact with the camera during explanations. Minimal eye contact (looking away from camera, reading from another screen) makes the student feel disconnected.",
+    "keywords": [
+      "eye contact",
+      "looking away",
+      "not looking at camera",
+      "disconnected",
+      "looking down"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "A - Friendliness: There was minimal eye contact from the tutor, which may make the student feel disconnected. Expressive, friendly visuals can support comfort and trust."
+  },
+  {
+    "id": "A-TONE-001",
+    "category": "Attitude",
+    "subcategory": "Friendliness",
+    "rule": "While addressing incomplete homework or mistakes, the tutor must remain encouraging and supportive. Blaming, speaking harshly, or showing frustration is not acceptable.",
+    "keywords": [
+      "harsh",
+      "blame",
+      "frustrated",
+      "angry tone",
+      "scolding",
+      "homework not done",
+      "disappointed"
+    ],
+    "severity": "medium",
+    "flag_level": "Yellow if pattern",
+    "deduction": "-1",
+    "standard_comment": "A - Friendliness: While it's important to address incomplete homework, kindly avoid blaming or speaking harshly to students. Instead, guide them with encouragement to help them stay motivated and engaged."
+  },
+  {
+    "id": "A-WARM-001",
+    "category": "Attitude",
+    "subcategory": "Session Initiation & Closure",
+    "rule": "The session must start with a warm welcome and ice-breaker. An abrupt start without greeting or warm-up makes younger students anxious and reduces rapport.",
+    "keywords": [
+      "abrupt start",
+      "no greeting",
+      "no warm-up",
+      "cold start",
+      "jumped into lesson",
+      "no ice-breaker"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "A - Session Initiation & Closure: The session started abruptly without any warm-up or welcome, which might make younger students feel anxious. Starting with a friendly question or quick chat helps ease them in."
+  },
+  {
+    "id": "T-DICT-001",
+    "category": "Teaching",
+    "subcategory": "Project Implementation & Activities",
+    "rule": "The tutor must not dictate code line-by-line to the student. Instead, the tutor should explain the concept and let the student write the code independently, providing hints when stuck.",
+    "keywords": [
+      "dictate",
+      "dictating code",
+      "write this",
+      "type this",
+      "copy this",
+      "step-by-step guidance",
+      "line by line"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "T - Project Implementation & Activities: Extensive step-by-step guidance was provided during project implementation. Kindly offer limited support and encourage the student to think critically and solve problems independently."
+  },
+  {
+    "id": "T-PROJCOMP-001",
+    "category": "Teaching",
+    "subcategory": "Project Implementation & Activities",
+    "rule": "The project must be fully implemented during the session as per the teacher guide. Assigning the project as homework instead of completing it during the session is not acceptable.",
+    "keywords": [
+      "project not completed",
+      "homework instead",
+      "do it at home",
+      "finish later",
+      "incomplete project",
+      "teacher guide not followed"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "T - Project Implementation & Activities: The project was not fully completed during the session as intended. Kindly adhere to the project content as outlined in the presentation slides."
+  },
+  {
+    "id": "T-DURATION-001",
+    "category": "Teaching",
+    "subcategory": "Class Management",
+    "rule": "Session duration must be strictly 60 minutes (+/- 10 minutes). Sessions ending more than 10 minutes early (under 50 minutes) must be flagged. If ending early, use remaining time for extra activities.",
+    "keywords": [
+      "short session",
+      "ended early",
+      "session duration",
+      "less than 50 minutes",
+      "54 minutes",
+      "time management"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "T - Class Management: The session duration should be strictly adhered to (1 hour +-10 minutes). If the session ends early, please utilize the remaining time by providing extra programming activities."
+  },
+  {
+    "id": "C-VIDPAUSE-001",
+    "category": "Curriculum",
+    "subcategory": "Tools used and Methodology",
+    "rule": "When showing a video during the session, the tutor should pause the video at key moments to discuss with the student and verify understanding.",
+    "keywords": [
+      "pause video",
+      "discuss video",
+      "video without pausing",
+      "played through",
+      "no discussion after video"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "C - Tools used and Methodology: It would be beneficial to pause the video at key moments to discuss it with the student and verify their understanding."
+  },
+  {
+    "id": "C-AUDSHARE-001",
+    "category": "Curriculum",
+    "subcategory": "Tools used and Methodology",
+    "rule": "When sharing screen to play a video, the tutor must ensure 'Share Sound' is checked in Zoom so the student can hear the video audio.",
+    "keywords": [
+      "no audio",
+      "share sound",
+      "forgot audio",
+      "video without sound",
+      "screen share audio"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "C - Tools used and Methodology: Kindly ensure audio is shared when playing videos to support student understanding and engagement."
+  },
+  {
+    "id": "T-DASH-001",
+    "category": "Teaching",
+    "subcategory": "Project Implementation & Activities",
+    "rule": "Students must upload their completed projects to the dashboard during the session. The tutor must guide and assist them through this process.",
+    "keywords": [
+      "dashboard upload",
+      "project upload",
+      "submit to dashboard",
+      "upload project",
+      "not uploaded"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "T - Project Implementation & Activities: Please be advised that students must upload their completed projects to the dashboard during the session. Your support in guiding them through this process is crucial."
+  },
+  {
+    "id": "S-CONF-001",
+    "category": "Setup",
+    "subcategory": "Environment",
+    "rule": "Personal or internal platforms (Discord, social media, personal chats) must not be visible to students during screen sharing to maintain data confidentiality.",
+    "keywords": [
+      "Discord",
+      "personal chat",
+      "social media",
+      "WhatsApp visible",
+      "internal platform",
+      "data confidentiality"
+    ],
+    "severity": "medium",
+    "flag_level": "Yellow",
+    "deduction": "-1",
+    "standard_comment": "S - Environment: Kindly ensure that personal or internal platforms are not visible to students during screen sharing in order to maintain data confidentiality and uphold professional boundaries."
+  },
+  {
+    "id": "C-SLIDEPACE-001",
+    "category": "Curriculum",
+    "subcategory": "Slides and project completion",
+    "rule": "The tutor should not rush through recap or explanation slides. A slower, more thoughtful pace helps students engage actively and understand better.",
+    "keywords": [
+      "rushing",
+      "rushed through",
+      "too fast",
+      "skipped slides",
+      "pacing",
+      "recap too quick"
+    ],
+    "severity": "low",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "C - Slides and project completion: Kindly avoid rushing through the recap slides. A slower and more thoughtful pace helps students engage actively and understand better."
+  },
+  {
+    "id": "T-ENGAGE-002",
+    "category": "Teaching",
+    "subcategory": "Student Engagement",
+    "rule": "The tutor must avoid long stretches of explaining without involving the student. Open-ended questions and encouraging the student to reflect on explanations improve engagement.",
+    "keywords": [
+      "long explanation",
+      "monologue",
+      "no questions",
+      "one-sided",
+      "not involving student",
+      "lecturing"
+    ],
+    "severity": "medium",
+    "flag_level": "Comment only",
+    "deduction": "-1",
+    "standard_comment": "T - Student Engagement: Kindly avoid spending long stretches explaining without involving the student. The session would benefit from asking more open-ended questions or encouraging the student to reflect."
+  }
+]

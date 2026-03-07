@@ -1,0 +1,202 @@
+{
+  "metadata": {
+    "source": "524 audited sessions from iSchool Dashboard V2 (updated March 2026)",
+    "total_findings_checked": 1894,
+    "overall_accurate_pct": 42,
+    "overall_inaccurate_pct": 56,
+    "description": "Per-subcategory false-positive rates from human auditor review. Used to filter phantom findings."
+  },
+  "high_false_positive_subcategories": [
+    {
+      "subcategory": "C-Tools and Methodology",
+      "total_checked": 330,
+      "fp_rate_pct": 60,
+      "warning": "60% FP — Only flag if tutor NEVER used annotation tools during the entire session. Single instances are normal."
+    },
+    {
+      "subcategory": "T-Student Engagement",
+      "total_checked": 228,
+      "fp_rate_pct": 52,
+      "warning": "52% FP — require a pattern of 3+ consecutive minutes with zero student interaction."
+    },
+    {
+      "subcategory": "T-Project Implementation & Activities",
+      "total_checked": 184,
+      "fp_rate_pct": 54,
+      "warning": "54% FP — Tutor demonstrating code is NORMAL. Only flag if tutor FULLY took over and student did nothing."
+    },
+    {
+      "subcategory": "A-Language Used",
+      "total_checked": 68,
+      "fp_rate_pct": 66,
+      "warning": "66% FP — Arabic is the session language. Informal Arabic is NORMAL. Only flag actual profanity or insults."
+    },
+    {
+      "subcategory": "S-Internet Quality",
+      "total_checked": 86,
+      "fp_rate_pct": 55,
+      "warning": "55% FP — Often student-side. Only flag if tutor's OWN connection caused >3 session disruptions."
+    },
+    {
+      "subcategory": "A-Voice Tone & Clarity",
+      "total_checked": 61,
+      "fp_rate_pct": 67,
+      "warning": "67% FP — Single impatient moment is not a flag. Require 3+ documented instances of harsh/frustrated tone."
+    },
+    {
+      "subcategory": "A-Friendliness",
+      "total_checked": 72,
+      "fp_rate_pct": 58,
+      "warning": "58% FP — Wrong name once is not a flag. Only flag if tutor kept wrong name after correction."
+    },
+    {
+      "subcategory": "S-Environment (virtual background)",
+      "total_checked": 30,
+      "fp_rate_pct": 80,
+      "warning": "80% FP — Do NOT flag virtual background / iSchool logo issues from frames. Zoom background detection from frames is unreliable."
+    },
+    {
+      "subcategory": "P-Material Readiness / Lesson Planning",
+      "total_checked": 77,
+      "fp_rate_pct": 77,
+      "warning": "77% FP — Do NOT flag 'no roadmap' unless tutor clearly had no lesson plan. Tutors give roadmap verbally."
+    },
+    {
+      "subcategory": "C-Slides and Project Completion",
+      "total_checked": 118,
+      "fp_rate_pct": 48,
+      "warning": "48% FP — Partial completion is common. Only flag if less than 50% of curriculum was covered."
+    },
+    {
+      "subcategory": "C-Homework",
+      "total_checked": 63,
+      "fp_rate_pct": 49,
+      "warning": "49% FP — Verify homework was actually skipped (not just done verbally) before flagging."
+    },
+    {
+      "subcategory": "T-Session Synchronization",
+      "total_checked": 49,
+      "fp_rate_pct": 49,
+      "warning": "49% FP — Verify actual session duration from audio/video length, not transcript timestamps."
+    },
+    {
+      "subcategory": "P-Session Pacing",
+      "total_checked": 89,
+      "fp_rate_pct": 36,
+      "warning": "36% FP — Only flag if time management failure directly caused curriculum not being covered."
+    },
+    {
+      "subcategory": "P-Project software & slides (fullscreen)",
+      "total_checked": 48,
+      "fp_rate_pct": 92,
+      "warning": "92% FP — NEVER flag 'not in fullscreen/slideshow mode'. This is a known phantom. DELETE any such finding."
+    }
+  ],
+  "reliable_subcategories": [
+    {
+      "subcategory": "S-Environment (leaving session)",
+      "note": "Reliable when tutor leaves mid-session for personal reasons."
+    },
+    {
+      "subcategory": "T-Class Management (short session)",
+      "note": "Reliable — verify audio/video confirm <57 min."
+    },
+    {
+      "subcategory": "A-Session Initiation & Closure (no greeting)",
+      "note": "Reliable when tutor starts without any greeting."
+    },
+    {
+      "subcategory": "P-Session study (bugs/unpreparedness)",
+      "note": "Reliable when tutor was clearly unprepared (multiple bugs, wrong content)."
+    },
+    {
+      "subcategory": "C-Tools used and Methodology (no annotations ever)",
+      "note": "Reliable only when tutor never used annotation tools across entire session."
+    }
+  ],
+  "false_positive_patterns": [
+    {
+      "pattern": "Virtual/iSchool background missing (from frames)",
+      "occurrences": 24,
+      "fp_rate_pct": 80,
+      "instruction": "DELETE — background detection from Zoom frame screenshots is unreliable. 80% of such findings are wrong."
+    },
+    {
+      "pattern": "Language Used — informal/slang Arabic expressions",
+      "occurrences": 45,
+      "fp_rate_pct": 66,
+      "instruction": "DELETE — Arabic informal speech is normal in tutoring. Only flag actual profanity or explicit insults."
+    },
+    {
+      "pattern": "Zoom annotation tools — mouse instead of arrows",
+      "occurrences": 198,
+      "fp_rate_pct": 60,
+      "instruction": "Only keep if tutor NEVER used annotation tools in the entire session. Single or occasional mouse use is normal."
+    },
+    {
+      "pattern": "Teaching — step-by-step / direct answers / tutor-led",
+      "occurrences": 100,
+      "fp_rate_pct": 54,
+      "instruction": "Convert to [Advice] only. Do NOT flag or deduct. Teaching methodology varies and is often appropriate."
+    },
+    {
+      "pattern": "Internet Quality — occasional lags",
+      "occurrences": 47,
+      "fp_rate_pct": 55,
+      "instruction": "Only flag if tutor's OWN connection caused 3+ disruptions. Distinguish from student-side issues."
+    },
+    {
+      "pattern": "Voice Tone — single impatient/harsh moment",
+      "occurrences": 41,
+      "fp_rate_pct": 67,
+      "instruction": "Require 3+ documented timestamps of harsh tone. Single ambiguous moment = DELETE."
+    },
+    {
+      "pattern": "Friendliness — called student wrong name (single)",
+      "occurrences": 42,
+      "fp_rate_pct": 58,
+      "instruction": "Only flag if tutor used wrong name repeatedly AFTER the student corrected them."
+    },
+    {
+      "pattern": "Full-screen/slideshow mode",
+      "occurrences": 44,
+      "fp_rate_pct": 92,
+      "instruction": "DELETE ALWAYS — top phantom pattern. Code editors shown in normal mode is correct."
+    },
+    {
+      "pattern": "Lesson Planning — no roadmap communicated",
+      "occurrences": 59,
+      "fp_rate_pct": 77,
+      "instruction": "DELETE unless tutor explicitly had wrong session content. Verbal roadmaps are acceptable."
+    },
+    {
+      "pattern": "Session Pacing — rushed/poor time management",
+      "occurrences": 32,
+      "fp_rate_pct": 36,
+      "instruction": "Only keep if poor pacing directly caused curriculum not being covered. Otherwise use [Advice]."
+    },
+    {
+      "pattern": "Student-side issue blamed on tutor",
+      "occurrences": 5,
+      "fp_rate_pct": 83,
+      "instruction": "DELETE — student internet, student camera, student software = student's issue, not tutor's."
+    },
+    {
+      "pattern": "iSchool branding / brand loyalty advice",
+      "occurrences": 18,
+      "fp_rate_pct": 60,
+      "instruction": "Convert to [Advice] only. Human reviewers do not deduct for this."
+    },
+    {
+      "pattern": "Homework — reviewed verbally but not on dashboard",
+      "occurrences": 31,
+      "fp_rate_pct": 49,
+      "instruction": "Only flag if homework was completely skipped. Verbal review is acceptable."
+    }
+  ],
+  "flag_accuracy": {
+    "Yellow_flags_fp_rate": 52,
+    "Red_flags_fp_rate": 61,
+    "note": "Over half of all flags in V32 were marked inaccurate by human reviewers. Require very strong, timestamp-backed evidence before any flag."
+  }
+}

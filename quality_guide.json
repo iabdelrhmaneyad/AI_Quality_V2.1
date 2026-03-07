@@ -1,0 +1,305 @@
+{
+  "title": "Quality Guide for Reviewers",
+  "purpose": "Explains how to correctly fill out the Quality Review Form for accurate, fair, and automated scoring. Covers deduction logic, flag types, and approved subcategories.",
+  "flag_types": {
+    "regular_comment": {
+      "when_to_use": "Issue appears for the first time and is not flaggable. Add in comments section only.",
+      "deduction": "-1 point"
+    },
+    "yellow_flag": {
+      "when_to_use": "Issue is flaggable and it's the first occurrence. Write in both comments AND yellow flag section.",
+      "deduction": "-1 point",
+      "example": "Yellow Flag - Dress Code: The instructor was wearing pajamas during the session. Kindly adhere to our dress code policy. [Full session]"
+    },
+    "red_flag": {
+      "when_to_use": "Repeated issue after a yellow flag. Reuse the EXACT SAME comment wording to trigger system deduction tracking.",
+      "deduction": "-2 points total",
+      "example": "Red Flag - Camera Quality: The instructor turned off the camera during the session. Kindly note that the camera should remain on throughout the entire session. [00:30:50 - 01:30:20]"
+    },
+    "repeated_red_flag": {
+      "when_to_use": "Issue persists after a red flag. Again reuse exact same wording.",
+      "deduction": "-3 points total"
+    }
+  },
+  "comment_format": {
+    "format": "[Category Letter] - [Subcategory Name]: [Clear, professional description of the issue]",
+    "example": "T - Project Implementation & Activities: Students didn't follow the planned activity, and the tutor didn't guide them back on track.",
+    "category_letters": {
+      "S": "Setup",
+      "A": "Attitude",
+      "P": "Preparation",
+      "C": "Curriculum",
+      "T": "Teaching",
+      "F": "Feedback"
+    }
+  },
+  "approved_subcategories": {
+    "setup": [
+      "Camera Quality",
+      "Microphone Quality",
+      "Environment",
+      "Internet Quality",
+      "Dress Code"
+    ],
+    "attitude": [
+      "Voice Tone & Clarity",
+      "Language Used",
+      "Session Initiation & Closure",
+      "Friendliness"
+    ],
+    "preparation": [
+      "Session study",
+      "Project software & slides",
+      "Knowledge About Subject"
+    ],
+    "curriculum": [
+      "Slides and project completion",
+      "Tools used and Methodology",
+      "Homework"
+    ],
+    "teaching": [
+      "Class Management",
+      "Student Engagement",
+      "All Student's Involvement",
+      "Session Synchronization",
+      "Project Implementation & Activities"
+    ]
+  },
+  "scoring_weights": {
+    "setup": "25% of total score",
+    "attitude": "20% of total score",
+    "preparation": "15% of total score",
+    "curriculum": "15% of total score",
+    "teaching": "25% of total score"
+  },
+  "deduction_table": {
+    "first_time_comment": "-1 point from score",
+    "first_time_yellow_flag": "-1 point from score",
+    "red_flag_after_yellow": "-1 (comment) + -1 (red flag) = -2 total",
+    "repeated_red_flag": "-2 (repeated comment) + -1 (red flag) = -3 total"
+  },
+  "common_mistakes": [
+    "Using category names that are not on the approved list",
+    "Writing vague or unstructured comments",
+    "Rewording repeated issues — this breaks the deduction tracking system",
+    "Forgetting to check the tutor's history before reviewing",
+    "Mixing red/yellow flags or using both sections for the same issue",
+    "Tutor ID must be written as T-XXXX (capital T) for system deduction to work",
+    "Forgetting to check whether the tutor was informed about the flag before the session",
+    "Not checking the Mentorship session before reviewing"
+  ],
+  "sections": [
+    {
+      "heading": "Introduction",
+      "content": "1"
+    },
+    {
+      "heading": "Quality Sheet",
+      "content": "2"
+    },
+    {
+      "heading": "📑 The Quality Check tab",
+      "content": "2"
+    },
+    {
+      "heading": "Group ID Selection Rule",
+      "content": "2"
+    },
+    {
+      "heading": "📑 The Counts tab:",
+      "content": "3"
+    },
+    {
+      "heading": "📝 Edit Hub Tab:",
+      "content": "3"
+    },
+    {
+      "heading": "📑Flag tab",
+      "content": "4"
+    },
+    {
+      "heading": "✍️Review Form",
+      "content": "5"
+    },
+    {
+      "heading": "How to Use the Review Form:",
+      "content": "5\nCheck the Tutor’s History Before Reviewing:\n5"
+    },
+    {
+      "heading": "Check the Session Issue Form",
+      "content": "5"
+    },
+    {
+      "heading": "Check if the Tutor Was Informed About the Previous Flag",
+      "content": "5"
+    },
+    {
+      "heading": "Yellow Flags vs Red Flags vs Regular Comments",
+      "content": "6"
+    },
+    {
+      "heading": "Regular Comments:",
+      "content": "6"
+    },
+    {
+      "heading": "Yellow Flag:",
+      "content": "6"
+    },
+    {
+      "heading": "Red Flag:",
+      "content": "7"
+    },
+    {
+      "heading": "Repeated Red Flag:",
+      "content": "7"
+    },
+    {
+      "heading": "Write Structured Comments (in Comments Section)",
+      "content": "7"
+    },
+    {
+      "heading": "🧮 How Deductions Work (Automatically by Script)",
+      "content": "8"
+    },
+    {
+      "heading": "🧾 Example Review Entry",
+      "content": "9\nComments Section:\n9"
+    },
+    {
+      "heading": "Red Flag Section:",
+      "content": "9"
+    },
+    {
+      "heading": "✅ Approved Subcategories (for Copy-Paste Use)",
+      "content": "9"
+    },
+    {
+      "heading": "⚠️ Common Mistakes to Avoid",
+      "content": "10"
+    },
+    {
+      "heading": "Introduction",
+      "content": "This guide explains how to correctly fill out the Quality Review Form to ensure accurate, fair,\nand automated scoring. It also outlines how to handle issues, how deductions are applied, and\nprovides a full list of approved subcategories for writing structured comments and flags also on\nhow to use the sheet."
+    },
+    {
+      "heading": "Quality Sheet",
+      "content": "DEMO"
+    },
+    {
+      "heading": "📑 The Quality Check tab",
+      "content": "helps track all assigned reviews and their completion status. Key columns include:\n● Columns A- C: Tutor data (ID, name, assigned mentor).\n● Column D: The assigned reviewer is responsible for conducting the session\nreview.\n● Column E: Role selection (Mentor/Coordinator).\n● Column F: Group ID of the session being reviewed.\n● Column G: to check after submitting the form so it will be counted as done"
+    },
+    {
+      "heading": "Group ID Selection Rule",
+      "content": "● If a tutor is reviewed in Weeks 3 & 4, the next reviewer in Weeks 5 & 6 must select a\ndifferent Group ID than the first reviewer.\n● If a tutor is reviewed again in Weeks 7 & 8, the reviewer must choose a different Group\nID than both previous reviewers.\n● Example:\n○ Week 2: Mohamed Elsayed reviews Tutor T-1234 under Group ID A.\n○ Week 3: Nouran (Reviewer 2) must select Group ID B (different from A).\n○ Week 4: If another reviewer (Reviewer 3) is assigned, they must choose Group\nID C (different from A and B)."
+    },
+    {
+      "heading": "📑 The Counts tab:",
+      "content": "To track your assigned quality review sessions. It includes:\n● The total number of sessions assigned to you\n● Your progress\n● Your target completion count\n● A leaderboard showing reviewers who finish on time"
+    },
+    {
+      "heading": "📝 Edit Hub Tab:",
+      "content": "Use this tab if you submitted the form with a mistake or need to make modifications.\nFor example, suppose you forgot to add a negative comment. In that case, you can replace the\nentire \"Negative Comments\" section with the updated version, along with the correct data\nrelated to that session.\n🛑 Important:\nOnce a form is submitted without a flag, you cannot edit the response to add one later, even\nafter assurance.\nHowever, you can edit the response sheet to change an existing flag from\nRed → Yellow\nRed →  None\nYellow →  Red\nYellow → None\nBoth →  Red\nBoth→ Yellow\nBoth→ None"
+    },
+    {
+      "heading": "📑Flag tab",
+      "content": "● Mentors must check the Red Flags tab and inform their tutors about any flags they\nhave received ASAP.\n● You will find Col Message, which contains the message so you can send it directly to the\ntutor and contains a form so the tutor can fill it out if they think the flag was issued\nincorrectly.\n● Once the tutor has been informed, check the corresponding box next to their name to\nconfirm acknowledgment."
+    },
+    {
+      "heading": "How to Use the Review Form:",
+      "content": "Check the Tutor’s History Before Reviewing:\n● Always check the previous reviews for the same tutor.\n● If an issue has already been flagged or commented on before, and it repeats, this\naffects how you enter the issue and how many points are deducted"
+    },
+    {
+      "heading": "Check the Session Issue Form",
+      "content": "Before selecting a comment or writing a flag, you must check the Session Issues Form for the\nspecific session being reviewed.\n✅ Example of a Valid Justification (No Flag):\n● Issue: The Tutor joined the session late\n● Justification: “The dashboard was down.”\n● ✅ Confirmed downtime → No flag should be added\n❌ Example of an Invalid Justification (Flag Required):\n● Issue: The Tutor joined the session late\n● Justification: “I overslept.”\n● ❌ Unacceptable reason → Flag should be added"
+    },
+    {
+      "heading": "Check if the Tutor Was Informed About the Previous Flag",
+      "content": "Before changing a yellow flag to red, make sure the tutor has already been informed about\nthe previous flag.\nNone\n● ❌ If the tutor was not informed, do not change the flag to red. You may still issue a"
+    },
+    {
+      "heading": "yellow flag.",
+      "content": "● ✅ If the tutor was informed before the session you are reviewing, and the issue is\nrepeated, change the flag from yellow to red.\nThis ensures fair treatment and accurate deductions."
+    },
+    {
+      "heading": "Regular Comments:",
+      "content": "● Use when the issue appears for the first time and is not flaggable. Add in the comments\nsection only."
+    },
+    {
+      "heading": "Yellow Flag:",
+      "content": "● Use when the issue is flaggable, but it's the first occurrence. Write the issue in both the"
+    },
+    {
+      "heading": "comments and the yellow flag section.",
+      "content": "✅ Example:\nComment choosen\nS - Dress Code: Kindly ensure a professional appearance,\nincluding a well-groomed presentation and adherence to\nsemi-formal/formal attire, during sessions."
+    },
+    {
+      "heading": "Yellow Flag sentence:",
+      "content": "✅ Example:"
+    },
+    {
+      "heading": "Yellow Flag - Dress Code: The instructor was wearing pajamas",
+      "content": "during the session. Kindly adhere to our dress code policy. [Full\nsession]\nNone\nNone"
+    },
+    {
+      "heading": "Red Flag:",
+      "content": "● Now it's a repeated issue."
+    },
+    {
+      "heading": "● Write it as a red flag in the Red Flag section.",
+      "content": "● Use the same comment that was used previously to ensure the system applies double\ndeductions.\n○ (e.g, “S - Camera Quality: Please note that it is mandatory to keep the webcam\nactivated throughout the entire session.”)\n✅ Example:"
+    },
+    {
+      "heading": "Red Flag - Camera Quality: The instructor turned off the camera",
+      "content": "during the session. Kindly note that the camera should remain on\nthroughout the entire session to ensure effective communication.\n[00:30:50 - 01:30:20]"
+    },
+    {
+      "heading": "Repeated Red Flag:",
+      "content": "● Again, reuse the same comment from the comment session used before to trigger an\neven higher deduction."
+    },
+    {
+      "heading": "Write Structured Comments (in Comments Section)",
+      "content": "For each issue, write your comment in this format:\n[Category Letter] - [Subcategory Name]: [Clear, professional\ndescription of the issue]\n✅ Example:\nNone\nNone\nT - Project Implementation & Activities: Students didn’t follow\nthe planned activity, and the tutor didn’t guide them back on\ntrack.\n🛑 Important:"
+    },
+    {
+      "heading": "● Only use the approved subcategories listed below.",
+      "content": "● If the issue isn’t listed in the form:\n1. First, search for it in the DEMI Quality Comment Bank.\n2. If it’s not found, follow this format:\n[Category Letter] - [Subcategory Name]: [Positive aspect] +\n[Identified issue] + [Suggestion for improvement or how it\naffected the session]"
+    },
+    {
+      "heading": "🧮 How Deductions Work (Automatically by Script)",
+      "content": "Issue Type\nDeduction Logic\n📝 First-time comment (non-flag issue)\n-1 point from score"
+    },
+    {
+      "heading": "🟨 First-time Yellow Flag",
+      "content": "-1 point from score"
+    },
+    {
+      "heading": "-2 from repeated comment + -1 red flag = -3 total",
+      "content": "🧠 Why it matters: The script automatically checks if the same comment has been added\nbefore. If so, it applies to increasing deductions.\n✅ Using the same wording allows the system to track and score it correctly.\nNone\nNone\nNone"
+    },
+    {
+      "heading": "🧾 Example Review Entry",
+      "content": "Comments Section:\nT - Class Management: The session lacked clear guidance, causing\nstudents to work in different directions.\nS - Homework: Homework was not reviewed or followed up on during\nthe session."
+    },
+    {
+      "heading": "Red Flag - Dress Code: The tutor wore a hoodie and appeared",
+      "content": "unprofessional. [Full session]"
+    },
+    {
+      "heading": "✅ Approved Subcategories (for Copy-Paste Use)",
+      "content": "Paste these exactly in your comments or flag entries:\nCamera Quality\nMicrophone Quality\nEnvironment\nInternet Quality\nDress Code\nVoice Tone & Clarity\nLanguage Used\nSession Initiation & Closure\nFriendliness\nSession study\nProject software & slides\nKnowledge About Subject\nSlides and project completion\nTools used and Methodology\nHomework\nClass Management\nStudent Engagement\nAll Student’s Involvement\nSession Synchronization\nProject Implementation & Activities"
+    },
+    {
+      "heading": "⚠️ Common Mistakes to Avoid",
+      "content": "● ❌ Using category names that are not on the list\n● ❌ Writing vague or unstructured comments\n● ❌ Rewording repeated issues — this breaks the deduction tracking"
+    },
+    {
+      "heading": "● ❌ Forgetting to check the tutor's history",
+      "content": "● ❌ Mixing red/yellow flags or using both sections at the same time for the same issue\n● ❌ Tutor ID must be written in the format T-XXXX (with a capital \"T\") to ensure the\ndeduction is properly recorded by the system.\n● ❌ Forgetting to check whether the tutor had already been informed about the flag\nbefore the session you are reviewing.\n● ❌ Not checking the Mentorship session before reviewing a session\n● ❌Checked a session as reviewed, while it’s not submitted"
+    },
+    {
+      "heading": "📌 Final Notes",
+      "content": "● Always keep comments objective, clear, and professional.\n● Use complete sentences and explain both what happened and why it matters.\nIf you’re unsure whether an issue counts as a yellow/red flag, consult your mentor or the DEMI\nQuality Team."
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "title": "Flag Comment Examples — Quality Review",
+  "purpose": "Standard templates for writing flag comments in quality reviews. Use [Flag Color] as Yellow Flag or Red Flag depending on severity and repetition.",
+  "note": "Replace [Flag Color] with 'Yellow Flag' (first occurrence) or 'Red Flag' (repeated). Replace [Duration] with actual timestamp range.",
+  "categories": {
+    "setup": {
+      "recommended_flag_level": "",
+      "subcategories": {
+        "Camera Quality": [
+          "[Flag Color] - Camera Quality: The camera remained off throughout the session. Please",
+          "keep the camera on to support effective communication.",
+          "[Flag Color] - Camera Quality: The instructor turned off the camera during the session.",
+          "Please ensure your camera remains on throughout to maintain visual engagement."
+        ],
+        "Microphone Quality": [
+          "[Flag Color] - Microphone Quality: The instructor's voice was difficult to hear. Kindly",
+          "improve the microphone quality to ensure clear communication. [00:30-01:45]"
+        ],
+        "Environment": [
+          "[Flag Color] - Environment: The instructor failed to use the official iSchool virtual",
+          "background. Please ensure the official background is used to maintain consistency and",
+          "professionalism.",
+          "[Flag Color] - Environment: The instructor used a virtual background that displayed an",
+          "incorrect grade level. Kindly ensure the background matches the assigned grade. [Could",
+          "be just a comment for the first time]",
+          "[Flag Color] - Environment: The session was conducted in a public place. Please attend",
+          "sessions from a quiet, private space to avoid interruptions.",
+          "[Flag Color] - Environment: Background noise or disturbances were present throughout",
+          "the session. Please ensure a quiet environment suitable for learning.",
+          "[Flag Color] - Environment: The instructor used a mobile phone, which affected session",
+          "stability and delivery. Please use a laptop or PC for a better session experience.",
+          "[Flag Color] - Environment: Eating or chewing gum was observed during the session.",
+          "Kindly avoid eating on camera to maintain a professional appearance."
+        ],
+        "Dress Code": [
+          "[Flag Color] - Dress Code: The attire worn by the instructor was inappropriate (e.g.,",
+          "sportswear). Kindly adhere to the dress code and wear semi-formal clothing."
+        ]
+      }
+    },
+    "attitude": {
+      "recommended_flag_level": "",
+      "subcategories": {
+        "Voice Tone & Clarity": [
+          "[Flag Color] - Voice Tone & Clarity: The instructor's tone came across as too intense for",
+          "students. Please maintain a calm and supportive tone to foster a positive learning"
+        ],
+        "Language Used": [
+          "[Flag Color] - Language Used: Political or religious topics were introduced during the",
+          "session. Such topics should be avoided to maintain a neutral and inclusive learning",
+          "environment. [Duration]",
+          "[Flag Color] - Language Used: Some words used during the session were inappropriate",
+          "or informal. Please maintain professional and age-appropriate language. [Duration]",
+          "[Flag Color] - Language Used: Feedback was shared using harsh or disrespectful",
+          "language. Kindly use supportive and constructive language in all interactions."
+        ],
+        "Session Initiation & Closure": [
+          "[Flag Color] - Session Initiation & Closure: The instructor harshly communicated the",
+          "rules, making negative comparisons to another class (e.g., “don’t be like them”). This",
+          "approach may come across as mocking or blaming students, which is not appropriate for",
+          "their age group and can hinder the development of a positive and respectful classroom"
+        ],
+        "Friendliness": [
+          "[Flag Color] - Friendliness: Shouting or intimidating behavior was observed. Please",
+          "handle misbehavior calmly and professionally. [Duration]",
+          "[Flag Color] - Friendliness: The instructor’s responses were overly strict or harsh.",
+          "Provide constructive feedback with supportive language. [Duration]",
+          "[Flag Color] - Friendliness: The instructor asked personal or intrusive questions. Kindly",
+          "avoid questions that invade student privacy. [Duration]"
+        ]
+      }
+    },
+    "preparation": {
+      "recommended_flag_level": "",
+      "subcategories": {
+        "Session study": [
+          "[Flag Color] - Session Study: The instructor did not adequately review the content",
+          "beforehand, resulting in a lack of structure during the session. Please ensure all material",
+          "is reviewed in advance."
+        ],
+        "Project software & slides": [
+          "[Flag Color] - Project Software & Slides: Internal platforms such as",
+          "[LMS/Dashboard/Slack] were displayed. Please avoid showing internal tools during",
+          "sessions. [Duration]"
+        ],
+        "Knowledge About the Subject": [
+          "[Flag Color] - Knowledge About Subject: Incorrect information was provided in response to",
+          "student questions. Please review lesson content thoroughly before sessions."
+        ]
+      }
+    },
+    "curriculum": {
+      "recommended_flag_level": "",
+      "subcategories": {
+        "Slides and project completion": [
+          "[Flag Color] - Slides and Project Completion: The session content was delivered using",
+          "student resources instead of official slides. Kindly use the official material to ensure",
+          "consistent quality.",
+          "[Flag Color] - Session Synchronization: Key components like Q&A, recap, or attendance",
+          "were skipped. Ensure all essential elements are included to maintain structure. (Mention",
+          "which part and duration )"
+        ],
+        "Tools used and Methodology": [
+          "[Flag Color] - Tools Used and Methodology: A video was played during the session",
+          "without sharing audio. Kindly ensure the audio is shared to support understanding.",
+          "[Flag Color] - Tools Used and Methodology: Unapproved external resources were",
+          "shared. Please only use pre-approved materials to stay aligned with the curriculum.",
+          "[Flag Color] – Tools Used and Methodology: Please ensure that the student’s screen",
+          "sharing is paused after project implementation to avoid confusion during the remaining",
+          "explanation. This allows all students to view the slides and follow along with the content.",
+          "[Flag Color] - Tools used and Methodology: The instructor used the Zoom platform for",
+          "personal purposes unrelated to the iSchool during the session. Kindly ensure that the",
+          "platform is used strictly for educational and professional objectives within the scope of",
+          "the program."
+        ],
+        "Homework": [
+          "[Flag Color] - Homework: Homework was not reviewed during the session. Reviewing",
+          "assigned work helps reinforce concepts and track student progress.",
+          "[Flag Color] - Homework: Students were not informed about their homework tasks.",
+          "Always provide clear instructions by the end of the session.",
+          "[Flag Color]  - Homework: Please note that it is mandatory to check students’ homework",
+          "by sharing their screen, not by reviewing it through the chat. Screen sharing allows for",
+          "clearer feedback and ensures proper evaluation."
+        ]
+      }
+    },
+    "teaching": {
+      "recommended_flag_level": "",
+      "subcategories": {
+        "Class Management": [
+          "[Flag Color] - Class Management: The instructor answered personal phone calls or texts",
+          "during the session. Please avoid using your phone for personal matters while teaching.",
+          "[Flag Color] - Class Management: Students were not muted during the break, causing",
+          "background disruptions. Kindly mute all students during breaks to preserve session",
+          "[Flag Color] - Class Management: Students were allowed to exchange personal contact",
+          "details. Kindly maintain safe and professional communication boundaries.",
+          "[Flag Color] - Class Management: The instructor used marks as a threat to manage",
+          "student behavior, which is inappropriate. Classroom management should be handled",
+          "with positive reinforcement and respectful communication. [Duration]",
+          "[Flag Color] - Class Management: Using inappropriate language, such as threatening to",
+          "remove a student from the session, is unprofessional and may contribute to a hostile",
+          "learning environment.[Duration]",
+          "[Flag Color]- Class Management: Student screen sharing should be stopped while the",
+          "instructor is explaining to avoid distractions among students.",
+          "[Flag Color] - Class Management: During attendance, please ensure that you call out",
+          "students’ names at least twice, rather than relying solely on raised hands for",
+          "confirmation. This helps ensure accurate attendance and encourages direct engagement",
+          "with each student.",
+          "[Flag Color] - Session Synchronization: Attendance after the break was skipped. Even if",
+          "students did not appear to leave, some may have taken the break away from their",
+          "screens. It is important not to proceed with the session until attendance is confirmed to",
+          "ensure all students are present and following the flow. [02:29:48]"
+        ],
+        "Project Implementation & Activities": [
+          "[Flag Color] – Project Implementation & Activities: The project was explained, but",
+          "students did not actively implement it nor share their screens. Live implementation and",
+          "screen sharing are essential to ensure engagement and understanding.",
+          "[Flag Color] - Project Implementation & Activities: The project was introduced, but",
+          "students were not reminded to upload their work or shown the steps. Please guide",
+          "students through the process.",
+          "[Flag Color] - Project Implementation & Activities: The instructor implemented the project",
+          "but did not allow students to do the same. Kindly ensure students actively build at least a",
+          "portion of the project during the session.",
+          "[Flag Color] - Project Implementation & Activities: The instructor sent the entire code to",
+          "students to copy. Kindly avoid this practice and guide students to implement code step",
+          "by step themselves.",
+          "[Flag Color] - Project Implementation & Activities: The instructor kept screen sharing for",
+          "extended periods, encouraging students to copy instead of implementing. Please pause",
+          "and allow time for hands-on participation.",
+          "[Flag Color] - Project Implementation & Activities: The instructor did not check student",
+          "implementation during the session. Kindly request students to share their screens while",
+          "working and provide guidance and support."
+        ],
+        "Session Synchronization": [
+          "[Flag Color] - Session Synchronization: Key components like Q&A, recap, or attendance",
+          "were skipped. Ensure all essential elements are included to maintain structure.",
+          "[Flag Color] - Session Synchronization: The session exceeded the allocated time without",
+          "a valid justification. Please manage time effectively to remain on schedule.",
+          "[Flag Color] - Session Synchronization: The instructor joined the session late. Please",
+          "make sure to enter at least 15 minutes before the scheduled start time for preparation",
+          "and readiness.",
+          "[Flag Color]  - Session Synchronization: Attendance after the break was skipped. It must",
+          "be taken both at the beginning and after the break to ensure proper session structure",
+          "and student tracking. [01:46]",
+          "[Flag Color] – Session Synchronization: The tutor did not follow the planned session",
+          "sequence by addressing parts of the homework after the break, which was not the",
+          "designated time for this activity. Please ensure each component of the session is",
+          "delivered in its scheduled order to maintain clarity and flow."
+        ]
+      }
+    }
+  }
+}
